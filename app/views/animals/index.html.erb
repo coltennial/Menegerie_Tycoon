@@ -1,2 +1,14 @@
-<h1>Animals#index</h1>
-<p>Find me in app/views/animals/index.html.erb</p>
+
+<%= button_to "Log Out", destroy_zoo_session_path, method: :delete %>
+
+<h2> Welcome <%= current_zoo.keeper_name %> </h2>
+
+<%= link_to "Capture New Exotic Animal", new_animal_path %>
+
+<h3> Your Animal </h3> 
+
+<% @animals.each do |a| %>
+
+  <%= a.name %> - <%= a.species %> <%= a.age %> 
+
+<% end %>

@@ -1,2 +1,22 @@
-<h1>Animals#new</h1>
-<p>Find me in app/views/animals/new.html.erb</p>
+<h1>Capturing a New Exotic Animal </h1>
+
+<%= form_with(model: @animal, local: true) do |f| %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name, required: true, placeholder: "Animal" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :species %>
+    <%= f.text_field :species, required: true, placeholder: "Species" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :age %>
+    <%= f.text_field :age, required: true, placeholder: "Age" %>
+  </div>
+
+  <%= f.submit %>
+
+<% end %>

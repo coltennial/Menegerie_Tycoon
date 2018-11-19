@@ -1,0 +1,19 @@
+.alert {
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+
+.alert-success, .alert-notice {
+  color: #000;
+  background-color: #55cc55;
+  border-color: #000;
+}
+
+.alert-error, .alert-alert {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}

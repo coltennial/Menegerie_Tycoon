@@ -1,14 +1,19 @@
 
-<%= button_to "Log Out", destroy_zoo_session_path, method: :delete %>
+<div class="box">
 
-<h2> Welcome <%= current_zoo.keeper_name %> </h2>
+  <%= button_to "Log Out", destroy_zoo_session_path, method: :delete, class: "ui inverted red button" %>
 
-<%= link_to "Capture New Exotic Animal", new_animal_path %>
+  <h2> Welcome <%= current_zoo.keeper_name %> </h2>
 
-<h3> Your Animal </h3> 
+  <%= link_to "Capture New Exotic Animal", new_animal_path, class: "ui inverted teal button" %>
 
-<% @animals.each do |a| %>
+  <h3> Your Animal </h3> 
 
-  <%= a.name %> - <%= a.species %> <%= a.age %> 
+  <% @animals.each do |animal| %>
 
-<% end %>
+    <%= animal.name %> - <%= animal.species %> <%= animal.age %> 
+    <a><%= link_to animal.name, animal %></a>
+
+  <% end %>
+
+</div>

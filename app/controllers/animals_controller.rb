@@ -1,5 +1,5 @@
 class AnimalsController < ApplicationController
-  before_action :set_animal, only: [:show, :edit, :update]
+  before_action :set_animal, only: [:show, :edit, :update, :destroy]
 
   def index
     @animals = current_zoo.animals 

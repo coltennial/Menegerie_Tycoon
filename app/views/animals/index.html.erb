@@ -11,8 +11,10 @@
 
   <% @animals.each do |animal| %>
 
-    <%= animal.name %> - <%= animal.species %> <%= animal.age %> 
-    <a><%= link_to animal.name, animal %></a>
+    <div id="animal-desc">
+      <%= animal.name %> - <%= animal.species %> <%= animal.age %> 
+      <a><%= link_to animal.name, animal %></a>
+    </div>
 
   <% end %>
 

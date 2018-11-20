@@ -1,27 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+
 body {
   display: flex;
   justify-content: center;
   background-image: url(./images/giraffe_water.jpg);
   background-repeat: no-repeat;
   background-size: 1440px 100%;
+  font-family: 'Baloo Bhaina', cursive;
 }
 
 h2 {
   font-size: 2.5rem;
   width: 150px;
   height: 100px;
+  font-family: 'Baloo Bhaina', cursive;
 }
 
 h3 {
   font-size: 2rem;
   width: 155px;
   height: 100px;
+  font-family: 'Baloo Bhaina', cursive;
+}
+
+
+
+#animal-desc {
+  width: 250px;
+  height: 50px;
+  padding: 1rem;
+  margin: 1rem;
+  border: 3px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+  word-spacing: 5px;
+  font-family: 'Baloo Bhaina', cursive;
 }
 
 #mango {
   border: 3px solid white;
   border-radius: 5px;
-  color: white;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: 'Baloo Bhaina', cursive;
+}
+
+#release {
+  color: #000;
+  width: 500px;
+  height: 100px;
+  border: 5px solid #ff0022;
+  background-color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 5px;
+  font-family: 'Baloo Bhaina', cursive;
 }
 
 #submit {
@@ -29,6 +62,7 @@ h3 {
   background-color: rgba(150, 20, 200, 0.3);
   border-radius: 5px;
   margin-top: 10px;
+  font-family: 'Baloo Bhaina', cursive;
 }
 
 .box {
@@ -42,5 +76,8 @@ h3 {
   padding-top: 1rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
+  font-family: 'Baloo Bhaina', cursive;
 }
+
+
 
